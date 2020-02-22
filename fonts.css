@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "LatoBlack";
+    src: url('assets/fonts/Lato/Lato-Black.ttf') format('typetrue');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LatoBold";
+    src: url('assets/fonts/Lato/Lato-Bold.ttf') format('typetrue');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url('assets/fonts/Lato/Lato-Regular.ttf.ttf') format('typetrue');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LatoLight";
+    src: url('assets/fonts/Lato/Lato-Light.ttf.ttf') format('typetrue');
+    font-weight: normal;
+    font-style: normal;
+}
