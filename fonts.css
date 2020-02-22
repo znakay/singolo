@@ -14,14 +14,14 @@
 
 @font-face {
     font-family: "LatoRegular";
-    src: url('assets/fonts/Lato/Lato-Regular.ttf.ttf') format('typetrue');
+    src: url('assets/fonts/Lato/Lato-Regular.ttf') format('typetrue');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "LatoLight";
-    src: url('assets/fonts/Lato/Lato-Light.ttf.ttf') format('typetrue');
+    src: url('assets/fonts/Lato/Lato-Light.ttf') format('typetrue');
     font-weight: normal;
     font-style: normal;
 }
