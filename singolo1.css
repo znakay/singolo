@@ -94,7 +94,7 @@ li {
 .slider {
     position: relative;
     padding-top: 53px;
-    padding-bottom: 65px;
+    padding-bottom: 64px;
     background-color: #f06c64;
 }
 
@@ -135,6 +135,12 @@ li {
     position: absolute;
     top: 228px;
     cursor: pointer;
+    filter: grayscale(22%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    filter: grayscale(2%);
 }
 
 .arrow-left {
@@ -142,7 +148,7 @@ li {
 }
 
 .arrow-right {
-    right: 1px;
+    right: 0px;
 }
 
 .services {
