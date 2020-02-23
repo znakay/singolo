@@ -128,6 +128,11 @@ li {
     justify-content: space-between;
     padding: 0px 72px;
 }
+.slider__arrows button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
 
 .arrow-left,
 .arrow-right {
