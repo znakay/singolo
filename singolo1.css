@@ -27,13 +27,24 @@ li {
 }
 
 .header {
+    position: relative;
+    padding: 33px 0 39px;
     background-color: #2d303a;
+}
+
+.header::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background-color: #323746;
 }
 
 .header__content {
     display: flex;
     justify-content: space-between;
-    padding: 35px 0;
 }
 
 .header__navigation {
@@ -46,7 +57,7 @@ li {
     font-size: 12px;
 }
 
-.header__navigation li:after {
+.header__navigation li::after {
     position: absolute;
     content: '.';
     color: #ffffff;
@@ -54,7 +65,7 @@ li {
     left: 13px;    
 }
 
-.header__navigation li:first-child:after {
+.header__navigation li:first-child::after {
     content: '';
 }
 
@@ -63,18 +74,14 @@ li {
 }
 
 .header__navigation-item a{
-    font-family: "LatoBold", "Arial", sans-serif;
+    font-family: 'Lato', "Arial", sans-serif;
+    font-weight: 700;
     letter-spacing: 0;
     transition: all 300ms;    
 }
 
 .header__navigation-item a:hover {
     color: #f06c64;
-}
-
-.header-bottom {
-    height: 6px;
-    background-color: #323746;
 }
 
 .slider {
@@ -121,9 +128,78 @@ li {
     background-color: #ea676b;
 }
 
+.services {
+    padding-top: 70px;
+    background-color: #f2f2f2;
+}
 
+.services-bottom {
+    height: 6px;
+    background-color: #ffffff;
+}
 
+.services__title,
+.info__title {
+    font-family: 'Lato';
+    font-weight: 900;
+    color: #666d89;
+}
 
+.services__text,
+.info__text {
+    color: #767e9e;
+}
 
+.services__title {
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 17.86px;
+    letter-spacing: normal;
+}
 
+.services__text {
+    margin-bottom: 50px;
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+    font-weight: 300; 
+}
 
+.services__info {
+    display: flex;
+}
+
+.info__box {
+    display: flex;
+    max-width: 300px;
+}
+
+.info__img {
+    width: 59px;
+    height: 59px;
+}
+
+.info__content {
+    margin-left: 20px;
+}
+
+.info__title {
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.info__text{
+    font-size: 12px;
+    line-height: 21.56px;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.info__column+.info__column {
+    margin-left: 20px;
+}
+
+.info__box+.info__box {
+    margin-top: 33px;
+}
