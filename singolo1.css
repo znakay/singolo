@@ -28,7 +28,7 @@ li {
 
 .header {
     position: relative;
-    padding: 33px 0 39px;
+    padding: 33px 0 38px;
     background-color: #2d303a;
 }
 
@@ -47,8 +47,12 @@ li {
     justify-content: space-between;
 }
 
+.header__img{
+    padding-top: 1px;
+}
+
 .header__navigation {
-    padding-top: 7px;
+    padding-top: 8px;
 }
 
 .header__navigation li {
@@ -59,18 +63,21 @@ li {
 
 .header__navigation li::after {
     position: absolute;
-    content: '.';
-    color: #ffffff;
-    bottom: 4px;
-    left: 13px;    
+    content: '';
+    top: 7px;
+    left: 12px; 
+    width: 2px;
+    height: 2px;
+    border-radius: 50%; 
+    background-color: #6d717e;  
 }
 
 .header__navigation li:first-child::after {
-    content: '';
+    background-color: transparent;
 }
 
 .header__navigation li+li {
-    padding-left: 24px;
+    padding-left: 26px;
 }
 
 .header__navigation-item a{
