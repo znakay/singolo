@@ -214,6 +214,9 @@ li {
 }
 
 .info__text{
+    padding-left: 1px;
+    text-align: justify;
+    word-break: break-all;
     font-size: 12px;
     line-height: 21.56px;
     font-family: 'LatoRegular';
