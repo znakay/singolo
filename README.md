@@ -1,1 +1,1 @@
-# Singolo. Part 1
+# Singolo
