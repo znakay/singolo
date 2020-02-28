@@ -63,14 +63,18 @@ li {
     padding-top: 8px;
 }
 
+.header__navigation ul {
+    display: flex;
+}
+
 .header__navigation li {
-    display: inline-block;
+    display: block;
     position: relative;
     font-size: 12px;
 }
 
 .header__navigation li::after {
-    position: absolute;
+    position: absolute; 
     content: '';
     top: 7px;
     left: 12px; 
