@@ -7,10 +7,173 @@
 }
 
 body {
-    font-size: 12px;
+    font-size: 18px;
+    color: #666d89;
 }
 
 a {
+    display: block;
     color: #ffffff;
     text-decoration: none;
+}
+
+li {
+    display: block;
+    list-style: none;
+}
+
+.outer-container {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.container {
+    padding: 0 40px;
+}
+
+.line_bottom {
+    position: relative;
+}
+
+.line_bottom::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 30px;
+    line-height: 17.86px;
+    font-family: "LatoBlack";
+}
+
+.section-text {
+    line-height: 30px;
+    font-family: "LatoLight";
+}
+
+.portfolio {
+    padding: 69px 0 73px;
+    background-color: #2d303a;
+}
+
+.portfolio.line_bottom::before {
+    background-color: #323746;
+}
+
+.portfolio__title {
+    margin-bottom: 28px;
+    letter-spacing: -0.1px;
+}
+
+.portfolio__text {
+    margin-bottom: 10px;
+}
+
+.filter-bar {
+    display: flex;
+    margin-bottom: 19px;
+    padding-left: 1px;
+}
+
+.filter-bar li+li {
+    margin-left: 10px;
+}
+
+.button {
+    padding: 0px 6px;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 21.56px;
+    font-family: "LatoRegular";
+    color: #666d89;
+    background-color: transparent;
+    transition: all 300ms;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #c5c5c5;
+    border-color: #c5c5c5;
+}
+  
+.portfolio__content {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 187px 187px 187px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-height: 601px;
+    overflow: hidden;
+}
+
+.about-us {
+    padding: 69px 0px 73px;
+    background-color: #f2f2f2;
+}
+
+.about-us.line_bottom::before {
+    background-color: #ffffff;
+}
+
+.about-us__title {
+    margin-bottom: 27px;
+    letter-spacing: -0.16px;
+}
+
+.about-us__text {
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+.about-us__team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us__person {
+    width: 300px;
+    height: 443px;
+}
+
+.about-us__person:nth-child(2) {
+    margin-left: -1px;
+}
+
+.person_foto {
+    margin-bottom: 13px;
+}
+
+.person__title {
+    margin-bottom: 10px;
+    letter-spacing: -0.18px;
+    font-size: 18px;
+    line-height: 17.86px;
+    font-family: "LatoBlack";
+}
+
+.person__text {
+    margin-bottom: 24px;
+    letter-spacing: -0.06px;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 21.56px;
+    font-family: "LatoRegular";
+}
+
+.person__contacts {
+    display: flex;
+}
+
+.person__contact {
+    cursor: pointer;
+}
+
+.person__contacts > a+a {
+    margin-left: 8px;
 }
