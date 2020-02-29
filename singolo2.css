@@ -7,7 +7,8 @@
 }
 
 body {
-    font-size: 12px;
+    font-size: 18px;
+    color: #666d89;
 }
 
 a {
@@ -42,10 +43,19 @@ li {
     width: 100%;
 }
 
+.section-title {
+    font-size: 30px;
+    line-height: 17.86px;
+    font-family: "LatoBlack";
+}
+
+.section-text {
+    line-height: 30px;
+    font-family: "LatoLight";
+}
+
 .portfolio {
     padding: 65px 0 73px;
-    font-size: 18px;
-    color: #666d89;
     background-color: #2d303a;
 }
 
@@ -55,20 +65,16 @@ li {
 
 .portfolio__title {
     margin-bottom: 30px;
-    font-size: 1.67em;
-    line-height: 17.86px;
-    font-family: "LatoBlack";
+    
 }
 
 .portfolio__text {
     margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 30px;
-    font-family: "LatoLight";
 }
 
 .filter-bar {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .filter-bar li+li {
@@ -94,3 +100,12 @@ li {
     border-color: #c5c5c5;
 }
   
+.portfolio__content {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 187px 187px 187px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-height: 601px;
+    overflow: hidden;
+}
