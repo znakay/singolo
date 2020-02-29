@@ -12,6 +12,7 @@ body {
 }
 
 a {
+    display: block;
     color: #ffffff;
     text-decoration: none;
 }
@@ -55,7 +56,7 @@ li {
 }
 
 .portfolio {
-    padding: 65px 0 73px;
+    padding: 69px 0 73px;
     background-color: #2d303a;
 }
 
@@ -64,17 +65,18 @@ li {
 }
 
 .portfolio__title {
-    margin-bottom: 30px;
-    
+    margin-bottom: 28px;
+    letter-spacing: -0.1px;
 }
 
 .portfolio__text {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .filter-bar {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
+    padding-left: 1px;
 }
 
 .filter-bar li+li {
@@ -108,4 +110,70 @@ li {
     grid-row-gap: 20px;
     max-height: 601px;
     overflow: hidden;
+}
+
+.about-us {
+    padding: 69px 0px 73px;
+    background-color: #f2f2f2;
+}
+
+.about-us.line_bottom::before {
+    background-color: #ffffff;
+}
+
+.about-us__title {
+    margin-bottom: 27px;
+    letter-spacing: -0.16px;
+}
+
+.about-us__text {
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+.about-us__team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us__person {
+    width: 300px;
+    height: 443px;
+}
+
+.about-us__person:nth-child(2) {
+    margin-left: -1px;
+}
+
+.person_foto {
+    margin-bottom: 13px;
+}
+
+.person__title {
+    margin-bottom: 10px;
+    letter-spacing: -0.18px;
+    font-size: 18px;
+    line-height: 17.86px;
+    font-family: "LatoBlack";
+}
+
+.person__text {
+    margin-bottom: 24px;
+    letter-spacing: -0.06px;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 21.56px;
+    font-family: "LatoRegular";
+}
+
+.person__contacts {
+    display: flex;
+}
+
+.person__contact {
+    cursor: pointer;
+}
+
+.person__contacts > a+a {
+    margin-left: 8px;
 }
