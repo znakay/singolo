@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.outer-container {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.container {
+    padding: 0 40px;
+}
+
+.line_bottom {
+    position: relative;
+}
+
+.line_bottom::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+}
