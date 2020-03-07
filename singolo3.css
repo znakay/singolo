@@ -1,4 +1,6 @@
-*{
+@import "assets/fonts/fonts.css";
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,4 +39,125 @@ li {
     left: 0;
     height: 6px;
     width: 100%;
+}
+
+.quote {
+    padding: 67px 0px 73px;
+    color: #f0d8d9;
+    background-color: #f06c64;
+}
+
+.quote.line_bottom::before {
+    background-color: #ea676b;
+}
+
+.quote__title,
+.contact-information__title {
+    font-size: 30px;
+    line-height: 17.86px;
+    font-family: "LatoBlack";
+}
+
+.quote__title {
+    margin-bottom: 30px;
+}
+
+.quote__text {
+    margin-bottom: 47px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "LatoLight";
+}
+
+.quote__content {
+    display: flex;
+}
+
+.quote__form {
+    margin-right: 20px;
+}
+
+.contact-information {
+    width: 300px;
+}
+
+input,
+textarea {
+    display: block;
+}
+
+input::placeholder,
+textarea::placeholder {
+    line-height: 21.56px;
+    font-family: "LatoRegular";
+    color: #f48c8f;
+}
+
+.quote__form input,
+.quote__form textarea {
+    padding: 14px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    outline: none;
+}
+
+.quote__form input {
+    width: 620px;
+    height: 38px;
+}
+
+.quote__form input+input {
+    margin-top: 18px;   
+}
+
+.quote__form textarea {
+    margin-top: 18px;
+    width: 620px;
+    height: 202px;
+    resize: none;
+}
+
+.contact-information__title {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.contact-information__text {
+    text-align: justify;
+    line-height: 21.56px;
+    font-family: "LatoRegular";
+}
+
+.contacts {
+    margin-top: 30px;
+}
+
+.contacts li {
+    position: relative;
+    padding-left: 24px;
+    font-family: "LatoRegular";
+}
+
+.contacts li+li {
+    margin-top: 10px;
+}
+
+.contacts li::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.contacts li:nth-child(1)::before {
+    left: 3px;
+    content: url("assets/img/location.png");
+}
+
+.contacts li:nth-child(2)::before {
+    left: 1px;
+    content: url("assets/img/phone.png");
+}
+
+.contacts li:nth-child(3)::before {
+    content: url("assets/img/mail.png");
 }
