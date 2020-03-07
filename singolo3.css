@@ -161,3 +161,28 @@ textarea::placeholder {
 .contacts li:nth-child(3)::before {
     content: url("assets/img/mail.png");
 }
+
+.footer {
+    padding: 22px 0px;
+    background-color: #2d303a;
+}
+
+.footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    padding-left: 2px;
+    font-family: "Latolightgit";
+    color: #666d89;
+}
+
+.social-networks {
+    display: flex;
+}
+
+.social-networks li+li {
+    margin-left: 8px;
+} 
