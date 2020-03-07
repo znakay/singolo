@@ -42,7 +42,8 @@ li {
 }
 
 .quote {
-    padding: 67px 0px 73px;
+    padding: 69px 0px 73px;
+    letter-spacing: -0.16px;
     color: #f0d8d9;
     background-color: #f06c64;
 }
@@ -59,11 +60,13 @@ li {
 }
 
 .quote__title {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .quote__text {
-    margin-bottom: 47px;
+    margin-bottom: 44px;
+    text-align: justify;
+    letter-spacing: 0.01px;
     font-size: 18px;
     line-height: 30px;
     font-family: "LatoLight";
@@ -88,6 +91,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
+    letter-spacing: -0.6px;
     line-height: 21.56px;
     font-family: "LatoRegular";
     color: #f48c8f;
@@ -102,17 +106,21 @@ textarea::placeholder {
     outline: none;
 }
 
+.quote__form textarea {
+    padding: 8px 15px;
+}
+
 .quote__form input {
     width: 620px;
     height: 38px;
 }
 
 .quote__form input+input {
-    margin-top: 18px;   
+    margin-top: 16px;   
 }
 
 .quote__form textarea {
-    margin-top: 18px;
+    margin-top: 16px;
     width: 620px;
     height: 202px;
     resize: none;
@@ -120,32 +128,36 @@ textarea::placeholder {
 
 .contact-information__title {
     font-size: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 11px;
+    padding-top: 1px;
+    
 }
 .contact-information__text {
     text-align: justify;
+    word-break: break-all;
+    letter-spacing: 0.025px;
     line-height: 21.56px;
     font-family: "LatoRegular";
 }
 
 .contacts {
-    margin-top: 30px;
+    margin-top: 27px;
 }
 
 .contacts li {
     position: relative;
-    padding-left: 24px;
+    padding-left: 23px;
     font-family: "LatoRegular";
 }
 
 .contacts li+li {
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 .contacts li::before {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 1px;
 }
 
 .contacts li:nth-child(1)::before {
@@ -154,11 +166,12 @@ textarea::placeholder {
 }
 
 .contacts li:nth-child(2)::before {
-    left: 1px;
     content: url("assets/img/phone.png");
 }
 
 .contacts li:nth-child(3)::before {
+    left: 0px;
+    top: 1px;
     content: url("assets/img/mail.png");
 }
 
@@ -174,8 +187,10 @@ textarea::placeholder {
 }
 
 .copyright {
+    margin-top: -3px;
     padding-left: 2px;
-    font-family: "Latolightgit";
+    letter-spacing: -0.1px;
+    font-family: "Latolight";
     color: #666d89;
 }
 
