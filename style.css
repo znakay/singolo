@@ -411,6 +411,7 @@ textarea::placeholder {
 .quote__form textarea {
     padding: 14px 15px;
     border: none;
+    color: #f0d8d9;
     border-radius: 5px;
     background-color: #d6564f;
     outline: none;
