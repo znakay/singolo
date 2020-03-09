@@ -1,3 +1,6 @@
+
+@import "assets/fonts/fonts.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -17,24 +20,181 @@ li {
     list-style: none;
 }
 
-.outer-container {
+
+h2 {
+    font-size: 30px;
+    line-height: 17.86px;
+    font-family: "LatoBlack";
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "LatoLight";
+}
+
+.wrapper {
     margin: 0 auto;
-    width: 1020px;
-}
-
-.container {
     padding: 0 40px;
+    max-width: 1020px;
 }
 
-.line_bottom {
+.quote {
+    padding: 63px 0px 67px;
+    letter-spacing: -0.16px;
+    color: #f0d8d9;
+    background-color: #f06c64;
+    border: 6px solid #ea676b;
+}
+
+.quote__title {
+    margin-bottom: 27px;
+}
+
+.quote__text {
+    margin-bottom: 44px;
+    text-align: justify;
+    letter-spacing: 0.01px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "LatoLight";
+}
+
+.layout-2-column {
+    display: flex;
+}
+
+.quote__form {
+    margin-right: 20px;
+}
+
+.information {
+    width: 300px;
+}
+
+input,
+textarea {
+    display: block;
+}
+
+input::placeholder,
+textarea::placeholder {
+    letter-spacing: -0.6px;
+    line-height: 21.56px;
+    font-family: "LatoRegular";
+    color: #f48c8f;
+}
+
+.quote__form input,
+.quote__form textarea {
+    padding: 14px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    outline: none;
+}
+
+.quote__form textarea {
+    padding: 8px 15px;
+}
+
+.quote__form input {
+    width: 619px;
+    height: 38px;
+}
+
+.quote__form input+input {
+    margin-top: 16px;   
+}
+
+.quote__form textarea {
+    margin-top: 16px;
+    width: 619px;
+    height: 202px;
+    resize: none;
+}
+
+.information__title {
+    margin-top: -2px;
+    margin-bottom: 8px;
+    letter-spacing: -0.1px;
+    font-size: 18px;
+    font-family: "LatoBlack";
+}
+
+.information__text {
+    text-align: justify;
+    font-size: 12px;
+    word-spacing: -1.4px;
+    letter-spacing: 0.025px;
+    line-height: 21.56px;
+    font-family: "LatoRegular";
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+}
+
+.contacts a {
     position: relative;
+    padding-left: 23px;
+    word-spacing: 0.8px;
+    color: #f0d8d9;
+    font-family: "LatoRegular";
 }
 
-.line_bottom::before {
+.contacts a+a {
+    margin-top: 6px;
+}
+
+.contacts a::before {
     position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    height: 6px;
-    width: 100%;
+    top: 1px;
+    left: 1px;
+}
+
+.contacts a:nth-child(3) {
+    letter-spacing: 0.1px;
+}
+
+.contacts a:nth-child(1)::before {
+    left: 4px;
+    content: url("assets/img/quote/location.png");
+}
+
+.contacts a:nth-child(2)::before {
+    left: 2px;
+    content: url("assets/img/quote/Phone.png");
+}
+
+.contacts a:nth-child(3)::before {
+    top: 2px;
+    left: 1px;
+    content: url("assets/img/quote/mail.png");
+}
+
+.footer {
+    padding: 22px 0px;
+    background-color: #2d303a;
+}
+
+.footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    margin-top: -3px;
+    padding-left: 2px;
+    font-size: 12px;
+    letter-spacing: -0.1px;
+    font-family: "LatoRegular";
+    color: #666d89;
+}
+
+.social-networks span+span {
+    margin-left: 5px;
 }

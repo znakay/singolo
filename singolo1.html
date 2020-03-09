@@ -9,122 +9,115 @@
 </head>
 
 <body>
-    <div class="outer-container">
-        <header class="header line_bottom">
-            <div class="container">
-                <div class="header__content">
-                    <div class="header__logo">
-                        <a href="#"><img src="assets/img/logo.png" alt="Logo"></a>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__content">
+                <a href="#" class="logo">
+                    <h1>SINGOLO</h1>
+                </a>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li><a href="#">HOME</a> </li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="wrapper">
+                <div class="slider__content">
+                    <div class="slider__content-inner">
+                        <img src="assets/img/slider/iPhone Vertical.png" alt="Phone vertical">
+                        <img src="assets/img/slider/iPhone Horizontal.png" alt="Phone horizontal">
                     </div>
-                    <nav class="header__navigation">
-                        <ul>
-                            <li class="header__navigation-item">
-                                <a href="#">HOME</a>
-                            </li>
-                            <li class="header__navigation-item">
-                                <a href="#services">SERVICES</a>
-                            </li>
-                            <li class="header__navigation-item">
-                                <a href="#">PORTFOLIO</a>
-                            </li>
-                            <li class="header__navigation-item">
-                                <a href="#">ABOUT</a>
-                            </li>
-                            <li class="header__navigation-item">
-                                <a href="#">CONTACT</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="arrows">
+                        <div class="arrow-left">
+                            <button class="arrow-button">
+                                <img src="assets/img/slider/arrow-left.png" alt="">
+                            </button>
+                        </div>
+                        <div class="arrow-right">
+                            <button class="arrow-button">
+                                <img src="assets/img/slider/arrow-right.png" alt="">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <section class="slider line_bottom">
-                <div class="container">
-                    <div class="slider__content">
-                        <div class="slider__content-inner">
-                            <img src="assets/img/iPhone Vertical.png" alt="Phone vertical">
-                            <img src="assets/img/iPhone Horizontal.png" alt="Phone horizontal">
+        </section>
+        <section class="services" id="services">
+            <div class="wrapper">
+                <div class="services__content">
+                    <h2 class="services__head">Our Services</h2>
+                    <p class="services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+                        Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <div class="layout-3-column">
+                        <div class="service">
+                            <img class="service__img" src="assets/img/services/Pen.png" alt="Pen">
+                            <div class="service__description">
+                                <h4 class="service__title">Custom Design</h4>
+                                <p class="service__text">Curabitur vestibulum eget mauris quis laoreet.
+                                    Phasellus in quam
+                                    laoreet, viverra lacus ut, ultrices velit.</p>
+                            </div>
                         </div>
-                        <div class="slider__arrows">
-                            <button class="arrow-left">
-                                <img src="assets/img/arrow-left.png" alt="">
-                            </button>
-                            <button class="arrow-right">
-                                <img src="assets/img/arrow-right.png" alt="">
-                            </button>
+                        <div class="service">
+                            <img class="service__img" src="assets/img/services/Bulb.png" alt="Bulb">
+                            <div class="service__description">
+                                <h4 class="service__title">Inovative Ideas</h4>
+                                <p class="service__text">Quisque luctus, quam eget molestie commodo, lacus
+                                    purus cursus
+                                    purus, nec rutrum tellus dolor id lorem.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="services line_bottom" id="services">
-                <div class="container">
-                    <div class="services__content">
-                        <h1 class="services__title">Our Services</h1>
-                        <p class="services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-                            Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                        <div class="services__info">
-                            <div class="info__box">
-                                <img class="info__img" src="assets/img/Pen.png" alt="Pen">
-                                <div class="info__content">
-                                    <h3 class="info__title">Custom Design</h3>
-                                    <p class="info__text">Curabitur vestibulum eget mauris quis laoreet.
-                                        Phasellus in quam
-                                        laoreet, viverra lacus ut, ultrices velit.</p>
-                                </div>
+                        <div class="service">
+                            <img class="service__img" src="assets/img/services/Heart.png" alt="Heart">
+                            <div class="service__description">
+                                <h4 class="service__title">Love Is The Answer</h4>
+                                <p class="service__text">Nulla sed nunc et tortor luctus faucibus. Morbi at
+                                    aliquet
+                                    turpis, et consequat felis. Quisque condimentum.</p>
                             </div>
-                            <div class="info__box">
-                                <img class="info__img" src="assets/img/Bulb.png" alt="Bulb">
-                                <div class="info__content">
-                                    <h3 class="info__title">Inovative Ideas</h3>
-                                    <p class="info__text">Quisque luctus, quam eget molestie commodo, lacus
-                                        purus cursus
-                                        purus, nec rutrum tellus dolor id lorem.</p>
-                                </div>
+                        </div>
+                        <div class="service">
+                            <img class="service__img" src="assets/img/services/Phone.png" alt="Phone">
+                            <div class="service__description">
+                                <h4 class="service__title">Responsive Layout</h4>
+                                <p class="service__text">Sed porttitor placerat rhoncus. In at nunc tellus.
+                                    Maecenas
+                                    blandit nunc ligula. Praesent elit leo.</p>
                             </div>
-                            <div class="info__box">
-                                <img class="info__img" src="assets/img/Heart.png" alt="Heart">
-                                <div class="info__content">
-                                    <h3 class="info__title">Love Is The Answer</h3>
-                                    <p class="info__text">Nulla sed nunc et tortor luctus faucibus. Morbi at
-                                        aliquet
-                                        turpis, et consequat felis. Quisque condimentum.</p>
-                                </div>
+                        </div>
+                        <div class="service">
+                            <img class="service__img" src="assets/img/services/Bubble.png" alt="Bubble">
+                            <div class="service__description">
+                                <h4 class="service__title">24 / 7 Support</h4>
+                                <p class="service__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula
+                                    nisi.
+                                    Nulla a sem erat. Pellentesque egestas venenatis lorem.</p>
                             </div>
-                            <div class="info__box">
-                                <img class="info__img" src="assets/img/Phone.png" alt="Phone">
-                                <div class="info__content">
-                                    <h3 class="info__title">Responsive Layout</h3>
-                                    <p class="info__text">Sed porttitor placerat rhoncus. In at nunc tellus.
-                                        Maecenas
-                                        blandit nunc ligula. Praesent elit leo.</p>
-                                </div>
-                            </div>
-                            <div class="info__box">
-                                <img class="info__img" src="assets/img/Bubble.png" alt="Bubble">
-                                <div class="info__content">
-                                    <h3 class="info__title">24 / 7 Support</h3>
-                                    <p class="info__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula
-                                        nisi.
-                                        Nulla a sem erat. Pellentesque egestas venenatis lorem.</p>
-                                </div>
-                            </div>
-                            <div class="info__box">
-                                <img class="info__img" src="assets/img/Star.png" alt="Star">
-                                <div class="info__content">
-                                    <h3 class="info__title">Feel Like A Star</h3>
-                                    <p class="info__text">Quisque hendrerit purus dapibus, ornare nibh vitae,
-                                        viverra
-                                        nibh. Fusce vitae aliquam tellus.</p>
-                                </div>
+                        </div>
+                        
+                        <div class="service">
+                            <img class="service__img" src="assets/img/services/Star.png" alt="Star">
+                            <div class="service__description">
+                                <h4 class="service__title">Feel Like A Star</h4>
+                                <p class="service__text">Quisque hendrerit purus dapibus, ornare nibh vitae,
+                                    viverra
+                                    nibh. Fusce vitae aliquam tellus.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
