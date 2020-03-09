@@ -9,49 +9,46 @@
 </head>
 
 <body>
-
-    <div class="outer-container">
-        <main>
-            <section class="quote line_bottom">
-                <div class="container">
-                    <h1 class="quote__title">Get a Quote</h1>
-                    <p class="quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-                        mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
-                        dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                    <div class="quote__content">
-                        <form class="quote__form">
-                            <input type="text" placeholder="Name (Requred)">
-                            <input type="text" placeholder="Email (Requred)">
-                            <input type="text" placeholder="Subject">
-                            <textarea placeholder="Describe your project in detail..."></textarea>
-                        </form>
-                        <div class="contact-information">
-                            <h3 class="contact-information__title">Contact Information</h3>
-                            <p class="contact-information__text">Quisque hendrerit purus dapibus, ornare nibh vitae,
-                                viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc
-                                et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                            <ul class="contacts">
-                                <li class="location">Elm St. 14/05 Lost City</li>
-                                <li class="phone">03528 331 86 35 </li>
-                                <li class="mail">info@singolo.com</li>
-                            </ul>
-                        </div>
+    <section class="quote">
+        <div class="wrapper">
+            <h2 class="quote__title">Get a Quote</h2>
+            <p class="quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
+                dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <div class="layout-2-column">
+                <div class="quote__form">
+                    <form action method="POST">
+                        <input type="text" name="name" placeholder="Name (Requred)">
+                        <input type="email" name="email" placeholder="Email (Requred)">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="detail" placeholder="Describe your project in detail..."></textarea>
+                    </form>
+                </div>
+                <div class="information">
+                    <h4 class="information__title">Contact Information</h4>
+                    <p class="information__text">Quisque hendrerit purus dapibus, ornare nibh vitae,
+                        viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc
+                        et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                    <div class="contacts">
+                        <a class="location">Elm St. 14/05 Lost City</a>
+                        <a href="tel:035283318635" class="phone">03528 331 86 35</a>
+                        <a href="mailto:info@singolo.com" class="mail">info@singolo.com</a>
                     </div>
                 </div>
-            </section>
-            <footer class="footer">
-                <div class="container">
-                    <h4 class="copyright">© Copyright 2013</h4>
-                    <ul class="social-networks">
-                        <li><a href="#"><img src="assets/img/facebook.png" alt="facebook"></a></li>
-                        <li><a href="#"><img src="assets/img/google.png" alt="google"></a></li>
-                        <li><a href="#"><img src="assets/img/twitter.png" alt="twitter"></a></li>
-                        <li><a href="#"><img src="assets/img/linkedIn.png" alt="linkedIn"></a></li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
-    </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <h4 class="copyright">© Copyright 2013 · by PSDchat.com</h4>
+            <div class="social-networks">
+                <span><a href="#"><img src="assets/img/facebook.png" alt="facebook"></a></span>
+                <span><a href="#"><img src="assets/img/google.png" alt="google"></a></span>
+                <span><a href="#"><img src="assets/img/twitter.png" alt="twitter"></a></span>
+                <span><a href="#"><img src="assets/img/linkedIn.png" alt="linkedIn"></a></span>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
