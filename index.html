@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Singolo</title>
 </head>
+
 <body>
     <header class="header">
         <div class="wrapper">
@@ -14,35 +16,47 @@
                     <h1>SINGOLO</h1>
                 </a>
                 <nav class="header__navigation">
-                    <ul class="navigation">
-                        <li><a href="#">HOME</a> </li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                    <ul class="navigation" id="menu">
+                        <li><a class="navigation__link active" href="#home">HOME</a></li>
+                        <li><a class="navigation__link" href="#services">SERVICES</a></li>
+                        <li><a class="navigation__link" href="#portfolio">PORTFOLIO</a></li>
+                        <li><a class="navigation__link" href="#about">ABOUT</a></li>
+                        <li><a class="navigation__link" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section class="slider">
+        <section class="slider" id="home">
             <div class="wrapper">
                 <div class="slider__content">
-                    <div class="slider__content-inner">
-                        <img src="assets/img/slider/iPhone Vertical.png" alt="Phone vertical">
-                        <img src="assets/img/slider/iPhone Horizontal.png" alt="Phone horizontal">
+                    <div class="slider__wrapper">
+                        <div class="slide slide-1">
+                            <div class="click_layout" id="vertical_phone"></div>
+                            <div class="screen_layout active" id="vertical_screen"></div>
+                            <img class="vertical-phone" src="assets/img/slider/iPhone Vertical.png"
+                                alt="Phone vertical">   
+                            <div class="click_layout click_layout-horizontal" id="horizontal_phone"></div>
+                            <div class="screen_layout screen_layout-vertical active" id="horizontal_screen"></div>
+                            <img class="horizontal-phone" src="assets/img/slider/iPhone Horizontal.png"
+                                alt="Phone horizontal">
+                        </div>
+                        <div class="slide slide-2">
+                            <img class="back-phone back-phone-first" src="assets/img/slider/iPhone Vertical 2 back.png"
+                                alt="Phone horizontal">
+                            <img class="center-phone" src="assets/img/slider/iPhone Vertical 2.png"
+                                alt="Phone vertical">
+                            <img class="back-phone back-phone-second" src="assets/img/slider/iPhone Vertical 2 back.png"
+                                alt="Phone horizontal">
+                        </div>
                     </div>
                     <div class="arrows">
-                        <div class="arrow-left">
-                            <button class="arrow-button">
-                                <img src="assets/img/slider/arrow-left.png" alt="">
-                            </button>
+                        <div class="arrow-button arrow-left" id="left">
+                            <img src="assets/img/slider/arrow-left.png" alt="left">
                         </div>
-                        <div class="arrow-right">
-                            <button class="arrow-button">
-                                <img src="assets/img/slider/arrow-right.png" alt="">
-                            </button>
+                        <div class="arrow-button arrow-right" id="right">
+                            <img src="assets/img/slider/arrow-right.png" alt="right">
                         </div>
                     </div>
                 </div>
@@ -120,59 +134,35 @@
                 <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor
                     ligula, eget
                     lacinia odio sem nec elit.</p>
-                <div class="portfolio__tags">
+                <div class="portfolio__tags" id="tags">
                     <span class="tag tag__selected">All</span>
                     <span class="tag tag__inactive">Web Design</span>
                     <span class="tag tag__inactive">Graphic Design</span>
                     <span class="tag tag__inactive">Artwork</span>
                 </div>
                 <div class="portfolio__content">
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio1.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio2.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio3.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio4.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio5.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio6.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio7.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio8.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio9.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio10.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio11.png" alt="portfolio__image">
-                    </div>
-                    <div>
                         <img class="portfolio__image" src="assets/img/portfolio/portfolio12.png" alt="portfolio__image">
-                    </div>
                 </div>
             </div>
         </section>
         <section class="about-us" id="about">
             <div class="wrapper">
                 <h2 class="about-us__title">About Us</h2>
-                    <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum.
-                        Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum.
+                    Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="about-us__people">
                     <div class="about-us__person">
                         <img src="assets/img/about-us/about1.png" alt="person foto" class="person_foto">
@@ -180,10 +170,12 @@
                         <p class="person__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus
                             purus, nec rutrum tellus dolor id lorem.</p>
                         <div class="person__contacts">
-                            <a href="#" class="person__contact"><img src="assets/img/facebook.png" alt="contact img"></a>
+                            <a href="#" class="person__contact"><img src="assets/img/facebook.png"
+                                    alt="contact img"></a>
                             <a href="#" class="person__contact"><img src="assets/img/google.png" alt="contact img"></a>
                             <a href="#" class="person__contact"><img src="assets/img/twitter.png" alt="contact img"></a>
-                            <a href="#" class="person__contact"><img src="assets/img/linkedIn.png" alt="contact img"></a>
+                            <a href="#" class="person__contact"><img src="assets/img/linkedIn.png"
+                                    alt="contact img"></a>
                         </div>
                     </div>
                     <div class="about-us__person">
@@ -192,10 +184,12 @@
                         <p class="person__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
                             laoreet, viverra lacus ut, ultrices velit.</p>
                         <div class="person__contacts">
-                            <a href="#" class="person__contact"><img src="assets/img/facebook.png" alt="contact img"></a>
+                            <a href="#" class="person__contact"><img src="assets/img/facebook.png"
+                                    alt="contact img"></a>
                             <a href="#" class="person__contact"><img src="assets/img/google.png" alt="contact img"></a>
                             <a href="#" class="person__contact"><img src="assets/img/twitter.png" alt="contact img"></a>
-                            <a href="#" class="person__contact"><img src="assets/img/linkedIn.png" alt="contact img"></a>
+                            <a href="#" class="person__contact"><img src="assets/img/linkedIn.png"
+                                    alt="contact img"></a>
                         </div>
                     </div>
                     <div class="about-us__person">
@@ -204,10 +198,12 @@
                         <p class="person__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
                             et consequat felis. Quisque condimentum.</p>
                         <div class="person__contacts">
-                            <a href="#" class="person__contact"><img src="assets/img/facebook.png" alt="contact img"></a>
+                            <a href="#" class="person__contact"><img src="assets/img/facebook.png"
+                                    alt="contact img"></a>
                             <a href="#" class="person__contact"><img src="assets/img/google.png" alt="contact img"></a>
                             <a href="#" class="person__contact"><img src="assets/img/twitter.png" alt="contact img"></a>
-                            <a href="#" class="person__contact"><img src="assets/img/linkedIn.png" alt="contact img"></a>
+                            <a href="#" class="person__contact"><img src="assets/img/linkedIn.png"
+                                    alt="contact img"></a>
                         </div>
                     </div>
                 </div>
@@ -220,14 +216,16 @@
                     mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
                     dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="layout-2-column">
-                    <div class="quote__form">
-                        <form action method="POST">
-                            <input type="text" name="name" placeholder="Name (Requred)">
-                            <input type="email" name="email" placeholder="Email (Requred)">
-                            <input type="text" name="subject" placeholder="Subject">
-                            <textarea name="detail" placeholder="Describe your project in detail..."></textarea>
-                        </form>
-                    </div>
+                    <form method="POST" id="quote-form" class="quote__form">
+                        <div class="tooltip" id="alert-name">Заполните это поле</div>
+                        <div class="tooltip" id="alert-email">Заполните это поле</div>
+                        <input type="text" placeholder="Name (Requred)" id="name" required
+                            pattern="^([А-Яа-яЁёa-zA-z]+\s?)+$">
+                        <input type="email" placeholder="Email (Requred)" id="email" required>
+                        <input type="text" placeholder="Subject" id="subject">
+                        <textarea maxlength="350" placeholder="Describe your project in detail..." id="detail"></textarea>
+                        <input type="submit" id="send" class="form-button" value="SEND">
+                    </form>
                     <div class="information">
                         <h4 class="information__title">Contact Information</h4>
                         <p class="information__text">Quisque hendrerit purus dapibus, ornare nibh vitae,
@@ -245,14 +243,26 @@
     </main>
     <footer class="footer">
         <div class="wrapper">
-            <h4 class="copyright">© Copyright 2013 · by PSDchat.com</h4>
             <div class="social-networks">
                 <span><a href="#"><img src="assets/img/facebook.png" alt="facebook"></a></span>
                 <span><a href="#"><img src="assets/img/google.png" alt="google"></a></span>
                 <span><a href="#"><img src="assets/img/twitter.png" alt="twitter"></a></span>
                 <span><a href="#"><img src="assets/img/linkedIn.png" alt="linkedIn"></a></span>
-            </ul>
-        </div>
+                </ul>
+            </div>
     </footer>
+
+    <div class="overlay hidden" id="overlay-block">
+        <div class="message" id="message-block">
+            <h4 class="message__title">Письмо отправлено</h4>
+            <p class="message__text">Тема: <span id="theme"></span></p>
+            <p class="message__text">Описание: <span id="description"></span></p>
+            <br>
+            <button class="close-btn" id="close-button">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
