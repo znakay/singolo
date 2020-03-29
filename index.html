@@ -25,6 +25,28 @@
                     </ul>
                 </nav>
             </div>
+            <div class="header__content-mobile">
+                <div class="burger-menu-overlay"></div>
+                <div class="burger-menu">
+                    <div class="burger-button">
+                        <span class="burger-button__lines"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="burger-menu-content">
+                        <ul class="navigation" id="menu">
+                            <li><a class="navigation__link active" href="#home">HOME</a></li>
+                            <li><a class="navigation__link" href="#services">SERVICES</a></li>
+                            <li><a class="navigation__link" href="#portfolio">PORTFOLIO</a></li>
+                            <li><a class="navigation__link" href="#about">ABOUT</a></li>
+                            <li><a class="navigation__link" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="logo">
+                    <h1>SINGOLO</h1>
+                </a>
+            </div>
         </div>
     </header>
     <main>
@@ -33,14 +55,18 @@
                 <div class="slider__content">
                     <div class="slider__wrapper">
                         <div class="slide slide-1">
-                            <div class="click_layout" id="vertical_phone"></div>
-                            <div class="screen_layout active" id="vertical_screen"></div>
-                            <img class="vertical-phone" src="assets/img/slider/iPhone Vertical.png"
-                                alt="Phone vertical">   
-                            <div class="click_layout click_layout-horizontal" id="horizontal_phone"></div>
-                            <div class="screen_layout screen_layout-vertical active" id="horizontal_screen"></div>
-                            <img class="horizontal-phone" src="assets/img/slider/iPhone Horizontal.png"
-                                alt="Phone horizontal">
+                            <div class="vertical-phone-layout">
+                                <div class="click-layout click-layout-vertical" id="vertical_phone"></div>
+                                <div class="screen-layout screen-layout-vertical active" id="vertical_screen"></div>
+                                <img class="vertical-phone" src="assets/img/slider/iPhone Vertical.png"
+                                    alt="Phone vertical">
+                            </div>
+                            <div class="horizontal-phone-layout">
+                                <div class="click-layout click-layout-horizontal" id="horizontal_phone"></div>
+                                <div class="screen-layout screen-layout-horizontal active" id="horizontal_screen"></div>
+                                <img class="horizontal-phone" src="assets/img/slider/iPhone Horizontal.png"
+                                    alt="Phone horizontal">
+                            </div>
                         </div>
                         <div class="slide slide-2">
                             <img class="back-phone back-phone-first" src="assets/img/slider/iPhone Vertical 2 back.png"
@@ -141,18 +167,18 @@
                     <span class="tag tag__inactive">Artwork</span>
                 </div>
                 <div class="portfolio__content">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio1.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio2.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio3.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio4.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio5.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio6.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio7.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio8.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio9.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio10.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio11.png" alt="portfolio__image">
-                        <img class="portfolio__image" src="assets/img/portfolio/portfolio12.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio1.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio2.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio3.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio4.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio5.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio6.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio7.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio8.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio9.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio10.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio11.png" alt="portfolio__image">
+                    <img class="portfolio__image" src="assets/img/portfolio/portfolio12.png" alt="portfolio__image">
                 </div>
             </div>
         </section>
@@ -217,13 +243,19 @@
                     dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="layout-2-column">
                     <form method="POST" id="quote-form" class="quote__form">
-                        <div class="tooltip" id="alert-name">Заполните это поле</div>
-                        <div class="tooltip" id="alert-email">Заполните это поле</div>
-                        <input type="text" placeholder="Name (Requred)" id="name" required
-                            pattern="^([А-Яа-яЁёa-zA-z]+\s?)+$">
-                        <input type="email" placeholder="Email (Requred)" id="email" required>
-                        <input type="text" placeholder="Subject" id="subject">
-                        <textarea maxlength="350" placeholder="Describe your project in detail..." id="detail"></textarea>
+                        <div class="input-name input-field">
+                            <div class="tooltip" id="alert-name">Заполните это поле</div>
+                            <input type="text" placeholder="Name (Requred)" id="name" required
+                                pattern="^([А-Яа-яЁёa-zA-z]+\s?)+$">
+                        </div>
+                        <div class="input-mail input-field">
+                            <div class="tooltip" id="alert-email">Заполните это поле</div>
+                            <input type="email" placeholder="Email (Requred)" id="email" required>
+                        </div>
+
+                        <input type="text" placeholder="Subject" class="input-field" id="subject">
+                        <textarea maxlength="350" placeholder="Describe your project in detail..."
+                            id="detail"></textarea>
                         <input type="submit" id="send" class="form-button" value="SEND">
                     </form>
                     <div class="information">
@@ -243,6 +275,7 @@
     </main>
     <footer class="footer">
         <div class="wrapper">
+            <p class="copyright-text">© Copyright 2013</p>
             <div class="social-networks">
                 <span><a href="#"><img src="assets/img/facebook.png" alt="facebook"></a></span>
                 <span><a href="#"><img src="assets/img/google.png" alt="google"></a></span>

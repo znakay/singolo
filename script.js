@@ -2,6 +2,10 @@
 
 window.onload = function () {
     scrollIvent();
+    burgerMenuHandler();
+    rotateBurgerButton();
+    closeBurgerMenuByClickBurgerMenuItem();
+    closeBurgerMenuByClickOverlay();
     addNavClickHandler();
     slider();
     activeScreenVerticalMobile();
@@ -11,7 +15,11 @@ window.onload = function () {
     submitForm();
 }
 
-
+// window.addEventListener('resize', () => {
+//     if (window.offsetWidth <= 767) {
+//         document.querySelector('.portfolio__content').innerHTML = getDefaultPortfolio().join('');
+//     }
+// })
 
 const scrollIvent = () => {
     document.addEventListener('scroll', () => {
@@ -44,6 +52,16 @@ const addNavClickHandler = () => {
             selectClickedItem(clikedItem);
         }
     });
+};
+
+const closeBurgerMenuByClickBurgerMenuItem = () => {
+    let navigation = document.querySelector('.burger-menu-content #menu');
+
+    navigation.addEventListener('click', (event) => {
+        if (event.target.classList.contains('navigation__link')) {
+            closeBurgerMenu();
+        }
+    });    
 }
 
 const removeSelectedItem = () => {
@@ -51,17 +69,60 @@ const removeSelectedItem = () => {
 
     items.forEach(element => {
         element.classList.remove('active');
-    })
-}
+    });
+};
 
 const selectClickedItem = (clikedItem) => {
     clikedItem.classList.add('active');
+    console.log('clickItem');
+}
+
+const rotateBurgerButton = () => {
+    document.querySelector('.burger-button').addEventListener('click', () => {
+        document.querySelector('.burger-button').classList.toggle('active');
+    });
+};
+
+const burgerMenuHandler = () => {
+    const burgerButton = document.querySelector('.burger-button');
+    const menu = document.querySelector('.burger-menu');
+
+    burgerButton.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        offsetLogo();
+        overlayMenu();
+    });
+};
+
+const offsetLogo = () => {
+    const logo = document.querySelector('.header__content-mobile .logo');
+    logo.classList.toggle('open-menu')
+};
+
+const overlayMenu = () => {
+    const overlay = document.querySelector('.burger-menu-overlay');
+    overlay.classList.toggle('open-menu');
+}
+
+const closeBurgerMenuByClickOverlay = () => {
+    const overlay = document.querySelector('.burger-menu-overlay');
+
+    overlay.addEventListener('click', () => {
+        closeBurgerMenu();
+    })
+}
+
+const closeBurgerMenu = () => {
+    document.querySelector('.burger-button').classList.remove('active');
+    document.querySelector('.header__content-mobile .logo').classList.remove('open-menu');
+    document.querySelector('.burger-menu-overlay').classList.remove('open-menu');
+    document.querySelector('.burger-menu').classList.remove('active');
 }
 
 //Slider
 const slider = () => {
     multiItemSlider('.slider__content');
-}
+};
 
 let multiItemSlider = (function () {
     return function (selector) {
@@ -170,7 +231,7 @@ const activeScreenVerticalMobile = () => {
     document.getElementById('vertical_phone').addEventListener('click', () => {
         document.getElementById('vertical_screen').classList.toggle('active');
     });
-}
+};
 
 //Horizontal mobile phone
 const activeScreenHorizontalMobile = () => {
@@ -220,27 +281,34 @@ const selectClickedTag = (clickedTag) => {
     clickedTag.classList.add('tag__selected');
 }
 
-//Возращает стандартный массив разметки картинок
-let getDefault = () => {
-    let deafaultPositinImages = [];
+//Возвращает стандартный массив разметки картинок
+let getDefaultPortfolio = () => {
+    let defaultMarkUp = [];
+
+    // let sizePortfolioImg = document.querySelectorAll('.portfolio__content img').length;
+
 
     for (let i = 0; i < document.querySelectorAll('.portfolio__content img').length; i++) {
-        deafaultPositinImages[i] = `<img class="portfolio__image" src="assets/img/portfolio/portfolio${i + 1}.png" alt="portfolio__image">`
+        defaultMarkUp[i] = `<img class="portfolio__image" src="assets/img/portfolio/portfolio${i + 1}.png" alt="portfolio__image">`
     }
 
-    return deafaultPositinImages;
+    // if (window.offsetWidth <= 767) {
+    //     defaultMarkUp = defaultMarkUp.slice(0, 8);
+    // }
+
+    return defaultMarkUp;
 }
 
 const showContentAllTag = () => {
-    document.querySelector('.portfolio__content').innerHTML = getDefault().join('');
+    document.querySelector('.portfolio__content').innerHTML = getDefaultPortfolio().join('');
 }
 
 const showContentWebDesignTag = () => {
-    document.querySelector('.portfolio__content').innerHTML = getDefault().reverse().join('');
+    document.querySelector('.portfolio__content').innerHTML = getDefaultPortfolio().reverse().join('');
 }
 
 const showContentGraphicDesignTag = () => {
-    let buffArray = getDefault();
+    let buffArray = getDefaultPortfolio();
     let oddIndex = [], evenIndex = [], totalList = [];
 
     for (let i = 0; i < buffArray.length; i++) {
@@ -253,7 +321,7 @@ const showContentGraphicDesignTag = () => {
 }
 
 const showContentArtworkTag = () => {
-    let buffArray = getDefault();
+    let buffArray = getDefaultPortfolio();
 
     for (let i = 0; i < buffArray.length; i += 2) {
         let buff = buffArray[i];
@@ -261,7 +329,6 @@ const showContentArtworkTag = () => {
         buffArray[i + 1] = buff;
     }
 
-    console.log(buffArray);
     document.querySelector('.portfolio__content').innerHTML = buffArray.join('');
 }
 
@@ -311,7 +378,6 @@ const submitForm = () => {
             showAlertEmailFieldForm();
         } else {
             showModalWindow();
-            document.getElementById('quote-form').reset();
         }
     });
 
@@ -358,5 +424,6 @@ const hideAlertEmailFieldForm = () => {
 const closeModalWindow = () => {
     document.getElementById('close-button').addEventListener('click', () => {
         document.getElementById('overlay-block').classList.add('hidden');
+        document.getElementById('quote-form').reset();
     });
 }
